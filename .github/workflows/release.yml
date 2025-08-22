@@ -92,7 +92,7 @@ jobs:
           file: ./Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64,linux/arm/v7
-          tags: fyb3roptik/threadfin:latest,fyb3roptik/threadfin:${{ github.ref_name }}
+          tags: n0pad/threadfin:latest,n0pad/threadfin:${{ github.ref_name }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -105,7 +105,7 @@ jobs:
             USE_NVIDIA=1
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: fyb3roptik/threadfin:latest-nvidia,fyb3roptik/threadfin:${{ github.ref_name }}-nvidia
+          tags: n0pad/threadfin:latest-nvidia,n0pad/threadfin:${{ github.ref_name }}-nvidia
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
